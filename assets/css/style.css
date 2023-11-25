@@ -29,6 +29,7 @@
 
 .header h1 {
     text-transform: uppercase;
+    
 }
 
 .header p {
@@ -59,7 +60,7 @@
     padding: 10px;
     font-weight: bold;
     display: block;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;   
 }
 
 .navbar ul li a:hover,
@@ -68,9 +69,13 @@
     background-color: black;
     color: #f6d200;
 }
+.content-area{
+    flex-direction: column;
+}
 
-
-
+.posts{
+    flex-direction: column;
+}
 @media all  and (min-width:1180px){
     .navbar ul{
         display:flex;   
@@ -78,4 +83,14 @@
     .navbar li{
         flex-grow: 1;
     }
+    .content-area{
+        flex-direction: row;
+    }
+    .main-content-area{
+        flex-grow:1;
+    }
+    .sidebar-section{
+    flex: 0 0 400px;
+    }        
+    
 }
