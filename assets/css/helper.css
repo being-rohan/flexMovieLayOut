@@ -12,3 +12,10 @@ ul{
 .flex-direction-column{
     flex-direction: column;
 }
+.section-heading{
+    color: black;
+    margin:30px 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+}
