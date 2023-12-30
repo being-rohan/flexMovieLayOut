@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Roboto:ital,wght@0,300;0,500;0,900;1,100;1,500;1,700&display=swap');
 
-.body {
+body {
     background-color: #ededed;
     color: black;
     line-height: 1.5;
@@ -121,117 +121,152 @@ article.post {
     width: 100%;
 
 }
-.watch-content{
+
+.watch-content {
     padding: 20px;
     font-weight: bold;
 }
-.watch-content h3{
+
+.watch-content h3 {
     font-weight: 400;
     text-transform: capitalize;
     font-size: 32px;
 }
-.watch-content h3, .watch-content p{
+
+.watch-content h3,
+.watch-content p {
     margin-bottom: 15px;
 }
-.watch-content a{
+
+.watch-content a {
     text-decoration: underline;
-    color:white;
+    color: white;
 }
 
-.watch-content p span{
+.watch-content p span {
     margin-top: 10px;
     font-size: 22px;
 }
+
 /* download now */
 
-.download-img img{
-    width:100%;
+.download-img img {
+    width: 100%;
 }
-.download-content{
-    display:flex;
+
+.download-content {
+    display: flex;
     flex-direction: column;
 
 }
-.download-img{
-    background-color:#000;
-   
+
+.download-img {
+    background-color: #000;
+
 }
-#download-link{
-    padding:20px;
-    background-color:#000;
-    color:#ffffff;
+
+#download-link {
+    padding: 20px;
+    background-color: #000;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.download-genere{
+
+.download-genere {
     margin-bottom: 15px;
 }
-.download-genere,.download-cast{
+
+.download-genere,
+.download-cast {
     flex-wrap: wrap;
 
 }
-.download-info{
+
+.download-info {
     background-color: #ffffff;
-    padding:20px 5px;
-   
+    padding: 20px 5px;
+
 }
-.download-cast h4, .download-genere h4 {
+
+.download-cast h4,
+.download-genere h4 {
     flex: 0 0 55px;
     font-size: 15px;
     text-transform: capitalize;
     align-self: center;
 }
-.download-cast{
+
+.download-cast {
     display: flex;
     flex-wrap: wrap;
 }
-.download-cast img{
+
+.download-cast img {
     width: 40px;
     border-radius: 50%;
     margin-right: 5px;
 }
-.download-rating{
+
+.download-rating {
     padding: 20px;
     text-align: center;
     background-color: yellow;
 }
+
 /* ////////// gallery/ */
-.gallery-img{
+
+/* ############### css for gallery section ############### */
+
+.gallery-img {
     margin-bottom: 20px;
     height: 350px;
 }
+
 .gallery-img a {
     height: 100%;
 }
-.gallery-img img{
+
+.gallery-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* .sidebar-section */
-.sidebar{
+.sidebar {
     padding: 0px 15px 15px;
-} 
-.side-cards{
+}
+
+
+.side-cards {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     text-transform: capitalize;
     box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px;
 }
-.side-cards h3{
+
+.side-cards h3 {
     font-size: 22px;
 }
-.side-cards ul{
+
+.side-cards ul {
     padding: 20px;
     list-style-type: disc;
     list-style-position: inside;
     font-weight: bold;
 }
-.side-cards a{
+
+.side-cards a {
     color: #000;
 }
+
+.side-cards.mb-20 {
+    margin-bottom: 20px;
+}
+
 /* footer */
 .footer {
     text-align: center;
@@ -241,13 +276,15 @@ article.post {
     padding: 20px;
     font-weight: 800;
 }
-@media all and (min-width: 469px){
+
+@media all and (min-width: 469px) {
     .side-info {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .side-cards{
+
+    .side-cards {
         flex-basis: 49%;
     }
 }
@@ -266,62 +303,77 @@ article.post {
     .watch-card {
         flex-direction: row;
     }
-    .watch-img{
-        flex:0 0 400px;
+
+    .watch-img {
+        flex: 0 0 400px;
     }
+
     .watch-img>img {
-        height:100%;
+        height: 100%;
         object-fit: cover;
-    
+
     }
-    .watch-content{
+
+    .watch-content {
         align-self: center;
-        padding:30px;
+        padding: 30px;
     }
-    .watch-card:nth-of-type(even) .watch-img{
-        order:1;
+
+    .watch-card:nth-of-type(even) .watch-img {
+        order: 1;
     }
-    .download-content{
+
+    .download-content {
         flex-direction: row;
     }
-    .download-info{
+
+    .download-info {
         flex-grow: 1;
         padding: 20px;
     }
-    .download-rating{
+
+    .download-rating {
         flex: 0 0 300px;
     }
-    #download-link{
+
+    #download-link {
         flex: 0 0 200px;
     }
+
     .gallery-imgs {
         display: flex;
         flex-wrap: wrap;
         margin-left: -10px;
     }
-    .gallery-imgs :nth-child(3n + 1){
+
+    .gallery-imgs :nth-child(3n + 1) {
         flex-basis: 30%;
     }
-    .gallery-imgs :nth-child(3n + 2){
+
+    .gallery-imgs :nth-child(3n + 2) {
         flex-basis: 500px;
     }
-    .gallery-imgs :nth-child(3n + 3){
+
+    .gallery-imgs :nth-child(3n + 3) {
         flex-basis: 250px;
     }
-    .gallery-img{
+
+    .gallery-img {
         flex-grow: 1;
         margin-left: 10px;
     }
-    @media all and (min-width: 469px){
-    .side-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
+    @media all and (min-width: 469px) {
+        .side-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .side-cards {
+            flex-basis: 49%;
+        }
     }
-    .side-cards{
-        flex-basis: 49%;
-    }
-}
 
 }
 
@@ -355,23 +407,27 @@ article.post {
 
     }
 
-    
+
     .posts .post:last-child {
         width: 100%;
     }
-    .gallery-img{
+
+    .gallery-img {
         height: 500px;
-       }
-       .side-info {
-           flex-wrap: nowrap;
-           flex-direction: column;
-       }
-       .sidebar{
-           flex : 0 0 400px;
-           padding: 15px;
-       }
-       .side-cards{
-           flex-basis: 100%;
-       }
+    }
+
+    .side-info {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 0 0 400px;
+        padding: 15px;
+    }
+
+    .side-cards {
+        flex-basis: 100%;
+    }
 
 }
